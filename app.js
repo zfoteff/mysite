@@ -16,6 +16,10 @@ app.use('/', indexRouter);
 var healthRouter = require('./routes/health');
 app.use('/health', healthRouter);
 
+//  - Projects router
+var projectRouter = require('./routes/projects');
+app.use('/projects', projectRouter);
+
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
