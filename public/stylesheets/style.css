@@ -1,0 +1,124 @@
+/* CSS Sheet for personal website */
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #969696;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.header {
+    margin: auto;
+    height: 35%;
+    text-align: center;
+    width: 100%;
+    background-color: #003232
+}
+
+.header h1 {
+    font-size: 38px;
+    color: White;
+    padding-top: 10px;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: White;
+    padding-bottom: 10px;
+}
+
+.navigation a {
+    color: #eaeadc;
+    padding: 8px;
+}
+
+.navigation a:active {
+    color: yellow;
+}
+
+.navigation a:hover {
+    color: yellow;
+}
+
+.content-container {
+    margin: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+#personal p {
+    text-indent: 25px;
+    line-height: 1.75;
+}
+
+#personal h1 {
+    text-align: right;
+    padding-right: 10%;
+}
+
+.pic-me {
+    /* Allows text to be wrapped around picture */
+    float: left;
+    padding: 0 15px 0 0;
+    height: 284px;
+    width: 225px;
+    border: 5px solid #ffffff;
+}
+
+#project-entry {
+    /* Format for each project entry */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #000000;
+    line-height: 27px;
+}
+
+#project-entry img {
+    float: left;
+    height: 180px;
+    width: 160px;
+    padding: 0px 15px 0px 10px;
+}
+
+#project-entry video {
+    float: left;
+    height: 165px;
+    width: 150px;
+    padding: 0px 15px 0px 10px;
+}
+
+#project-entry p {
+    padding: 0px 15px 0px 15px;
+}
+
+.footer {
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    background-color: #003232;
+}
+
+.footer h1 {
+    font-size: 26px;
+    color: White;
+    padding: 20px 0px 20px 10px;
+    display: inline-block;
+}
+
+.footer a {
+    font-size: 20px;
+    color: White;
+    padding: 20px 0px 20px 10px;
+}
+
+.footer p {
+    font-size: 20px;
+    color: White;
+    padding: 20px 0px 20px 10px;
+    display: inline-block;
+}
