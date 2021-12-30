@@ -3,3 +3,57 @@ block title
     title Zac Foteff | Personal Projects 
 block style
     link(rel='stylesheet' href='/stylesheets/projects.css')
+block content 
+    div#projects
+        table 
+            tbody 
+                tr 
+                    td.project-media
+                        video(src="/images/LEDDemo.mp4" controls) 
+                    td.project-entry 
+                        h1 Sound Reactive LED System
+                        p 
+                        | While at college, I was inspired by a classmate to create a sound reactive LED light system after I learned about how exorbitantly expensive those systems can be. Using an Arduino Uno, a three meter LED strip, and
+                        | a parallax sound impact sensor I was able to create a system that pulses when the ambient sound in the room exceeds certain decibel threshold.
+                        | I am currently working on a new iteration that uses an addressable LED strip, which will allow for greater customization
+                        | and more light sequences. Additionally, I am trying to integrate a new sensor that is more sensitive to changes in decibel levels, 
+                        | which will also allow for greater customization.
+                        p For this project I learned these new skills:               
+                        ul
+                            li Using Arduino micro controllers
+                            li Manipulating addressable LED strips
+                            li Creating hardware schematics and wiring components
+                            li Soldering
+                tr 
+                    td.project-media 
+                        img(src="/images/flappy.png" alt="Flappy Bird Screenshot")
+                    td.project-entry
+                        h1 Flappy Bird
+                        p
+                        | I recreated the popular mobile game Flappy Bird using handmade pixel art and the Pygame module. 
+                        | The game follows a simple loop where the player tries to navigate between the pipes and survive as long as they can. 
+                        | Future iterations will involve a scoring system, as well as more dynamic animations.
+                        p For this project I learned these new skills:
+                        ul
+                            li Using the PyGame Python library
+                            li Manipulating sprite models 
+                            li Infite scrolling 
+                            li Creating pixel art
+                tr 
+                    td.project-media
+                        img(src="/images/cways.png" alt="Conway's Game of Life Screenshot")
+                    td.project-entry
+                        h1 Conway's Game of Life
+                        h2: a(href="https://bitstorm.org/gameoflife/") Original Source 
+                        p
+                        | Using Python, I created a command line implementaion of Conway's Game of Life a(href="https://bitstorm.org/gameoflife/") (Source).
+                        | The game is referred to as a "celluar automaton" that models cell growth in generations based off of 4 rules:
+                        ol
+                            li All cells with one or no neighbors die 
+                            li All cells with 4 or more neighbors die 
+                            li All cells with two or three neighbors survives to the next generation 
+                            li All dead cells with exactly 4 neighbors are resurrected in the next generation
+                        p
+                        | Each time the program is started a randomly generated colony of cells is created, acting as the initial state for the colony to evolve from. The
+                        | player then can observe the colony evolve each generation following the four rules. 
+                        p Future versions may include: a GUI that allows for better user control and the option to input custom initial colonies.

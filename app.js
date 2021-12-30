@@ -10,15 +10,15 @@ var app = express();
 //  Routers
 //  - Index router
 var indexRouter = require('./routes/index');
-app.use('/', indexRouter);
+app.use(indexRouter);
 
 //  - Healthcheck router
 var healthRouter = require('./routes/health');
-app.use('/health', healthRouter);
+app.use(healthRouter);
 
 //  - Projects router
 var projectRouter = require('./routes/projects');
-app.use('/projects', projectRouter);
+app.use(projectRouter);
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));

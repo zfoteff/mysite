@@ -2,12 +2,15 @@ var express = require('express');
 var router = express.Router();
 
 const intro_string = "\tHello! My name is Zac Foteff and I am a student at Gonzaga University pursing a Bachelor of Science focused in Computer Science with a minor in Mathematics. " +
-    "I am interested in pursing careers as a backend software developer, or in the computer/network security field.\n\n\tMy Journey with computer science began when I was a freshman " +
-    "in highschool. I discovered a Python IDE for iPad called Pythonista during Christmas vacation and experimented with every module I could -- even though I knew nothing about computer " +
-    "syntax, or what a programming language even was at the time. Nevertheless, by the end of the break I was enamoured with the subject of computer science and was certain that I had " +
-    "found something that I wanted to do for the rest of my life. Folowing that discovery, I took every computer science class that my highchool offered and continued to expand my knowledge at Gonzaga.";
+    "I am interested in pursing a career as a backend software developer, or in the computer/network security field.\n\n\tMy Journey as a software developer began when I was just a freshman " +
+    "in highschool. I discovered a Python IDE for my iPad called Pythonista and I spent my Christmas break studying Python documentation and created my first scripts to " +
+    "practice what I had learned. I knew that day I had found something that inspired me and sparked creativity " +
+    "in me like nothing else ever had. In the spring of 2018, I made the decision to pursue this passion by enrolling at Gonzaga University as a Computer Science major. " +
+    "In the summer of 2021, I had the opportunity to create production-level code during an internship at Kroger Technology. During my time on the " +
+    "Customer Dialog team, I acquired many new skills such as developing for RESTful systems, learning how to " +
+    "contribute effectively to a team environment, and the vital importance of writing good tests for high-scale applications"
 
-const skills_string = "\tMy learning isn't just limited to the classroom. I spend much of my free time researching and " +
+const skills_string = "\tMy learning isn't just limited to the classroom and the work environment. I spend much of my free time researching and " +
     "designing projects for myself in order to challenge myself and gain practical knowledge of the many different " +
     "aspects of computer science. You can find a selection of these projects displayed in the Personal Projects " +
     "tab of this website. In addition to various personal projects, I have devoted lots of time to learning " +

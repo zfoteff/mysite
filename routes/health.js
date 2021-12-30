@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET health of site */
 
-router.get('/', function(req, res, next) {
+router.get('/health', function(req, res, next) {
     health = {
         'header': req.headers,
         'uptime': process.uptime(),
