@@ -1,0 +1,12 @@
+extends layout 
+block title
+    title Zac Foteff | Home Page
+block style
+    link(rel='stylesheet', href='/stylesheets/style.css')
+block content 
+    div#personal
+        img(src="/images/Senior Picture.PNG" alt="Me").pic-me
+        h1 <b>About Me</b>
+        p #{intro}
+        img(src="/images/LaxPhoto.JPG" alt="Me playing Lacrosse").pic-me
+        p #{skills}

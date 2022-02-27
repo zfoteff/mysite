@@ -15,23 +15,16 @@ const skills_string = "\tMy learning isn't just limited to the classroom and the
     "aspects of computer science. You can find a selection of these projects displayed in the Personal Projects " +
     "tab of this website. In addition to various personal projects, I have devoted lots of time to learning " +
     "various other skills need in computer science and software development. I have a good understanding of Git " +
-    "and its various tools for managing workflow, as well as developing a good understanding of the Linux" +
-    "operating system.Additionally, I have devoted lots of time towards learning to use and developing with " +
+    "and its various tools for managing workflow, as well as developing a good understanding of the Linux " +
+    "operating system. Additionally, I have devoted lots of time towards learning to use and developing with " +
     "Arduinos and Raspberry Pis.I especially love developing projects with the Arduino to bridge the gap " +
     "between hardware and software.";
-
-
-const personal_string = "\tIn my personal life, I am a big brother with two younger sisters. I " +
-    "am an avid Lacrosse player and a passionate Oregon Ducks football fan. I enjoy spending lots of time outdoors " +
-    " skiing and hiking in my home state of Oregon In the future, I'm looking forward to having the opportunity to " +
-    "coach a youth Lacrosse team and to travel to all 50 states in the United States";
 
 
 /* GET home page. */
 data = {
     intro: intro_string,
     skills: skills_string,
-    personal: personal_string
 };
 
 router.get('/', function(req, res, next) {

@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 /* GET health of site */
-
 router.get('/health', function(req, res, next) {
     health = {
         'header': req.headers,
