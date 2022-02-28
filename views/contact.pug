@@ -3,6 +3,8 @@ block title
     title Zac Foteff | Contact Me
 block style 
     link(rel='stylesheet' href='/stylesheets/contact.css')
+block scripts 
+    script(src="scripts/contact.js") 
 block content 
     h1#title-elem <u><b>Contact Me</b></u>
     div#contact-page
@@ -22,4 +24,5 @@ block content
                 form(action="", method="")
                     input#mailback-address(type="email", name="mailback" placeholder="Return Address")
                     input#subject(type="text", name="subject" placeholder="Subject")
-                    textarea#messsage(name="message") 
+                    textarea#message(name="message" placeholder="Message")
+                button#submit Submit 

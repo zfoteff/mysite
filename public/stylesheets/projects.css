@@ -1,5 +1,4 @@
 .info-card:hover {
-    width: 100%;
     background-color: white;
     border: 5px solid rgb(115, 155, 22);
 }
@@ -11,13 +10,17 @@
 
 .project-media {
     padding: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     width: 20%;
 }
 
 .project-media img {
-    float: left;
     height: fit-content;
-    width: 95%;
+    width: 100%;
     padding: 0px 15px 15px 0px;
 }
 
@@ -33,6 +36,10 @@
     padding: 15px 10px 5px 5px;
     line-height: 27px;
     width: 80%;
+}
+
+.project-entry h1 {
+    line-height: 1.5;
 }
 
 .button-container {
