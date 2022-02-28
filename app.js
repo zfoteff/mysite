@@ -8,7 +8,7 @@ var logger = require('morgan');
 var app = express();
 
 //  Routers
-//  - Index router
+//  - Index (about) router
 var indexRouter = require('./routes/index');
 app.use(indexRouter);
 
@@ -19,6 +19,10 @@ app.use(healthRouter);
 //  - Projects router
 var projectRouter = require('./routes/projects');
 app.use(projectRouter);
+
+//  - Contact me router
+var contactRouter = require('./routes/contactInfo');
+app.use(contactRouter);
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));

@@ -4,9 +4,10 @@ block title
 block style
     link(rel='stylesheet', href='/stylesheets/style.css')
 block content 
-    div#personal
+    h1 <u><b>About Me</b></u>
+    div.info-card
         img(src="/images/Senior Picture.PNG" alt="Me").pic-me
-        h1 <b>About Me</b>
         p #{intro}
+    div.info-card
         img(src="/images/LaxPhoto.JPG" alt="Me playing Lacrosse").pic-me
         p #{skills}

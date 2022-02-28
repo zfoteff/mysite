@@ -1,0 +1,25 @@
+extends layout 
+block title 
+    title Zac Foteff | Contact Me
+block style 
+    link(rel='stylesheet' href='/stylesheets/contact.css')
+block content 
+    h1#title-elem <u><b>Contact Me</b></u>
+    div#contact-page
+        div.info-card
+            div#contact-icons
+                div.link
+                    a(href="https://www.linkedin.com/in/zachary-foteff/")
+                        img(src="/images/linkedin.png", alt="LinkedIn Link")
+                div.link
+                    a(href="https://www.facebook.com/zachary.foteff.7")
+                        img(src="/images/facebook.png", alt="Facebook Link")
+                div.link
+                    a(href="https://www.github.com/zfoteff")
+                        img(src="/images/github.png", alt="GitHub Link")
+            div#contact-email
+                h2 <u><b>Email Me</b></u>
+                form(action="", method="")
+                    input#mailback-address(type="email", name="mailback" placeholder="Return Address")
+                    input#subject(type="text", name="subject" placeholder="Subject")
+                    textarea#messsage(name="message") 

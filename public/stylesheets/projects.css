@@ -1,72 +1,16 @@
-/* CSS Sheet for personal website */
-
-body {
-    display: flex;
+.info-card:hover {
     width: 100%;
-    height: 100%;
-    flex-direction: column;
-    background-color: #969696;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    background-color: white;
+    border: 5px solid rgb(115, 155, 22);
 }
 
-.header {
-    margin: auto;
-    height: 35%;
+#title-elem {
     text-align: center;
-    width: 100%;
-    background-color: #003232
-}
-
-.header h1 {
-    font-size: 38px;
-    color: White;
-    padding-top: 10px;
-}
-
-.header h2 {
-    font-size: 24px;
-    color: White;
-    padding-bottom: 10px;
-}
-
-.navigation a {
-    color: #eaeadc;
-    padding: 8px;
-}
-
-.navigation a:active {
-    color: yellow;
-}
-
-.navigation a:hover {
-    color: yellow;
-}
-
-.content-container {
-    margin: auto;
-    width: 100%;
-    background-color: whitesmoke;
-    font-size: 20px;
-}
-
-.pic-me {
-    /* Allows text to be wrapped around picture */
-    float: left;
-    margin: 0 10px 10px 0;
-    height: 284px;
-    width: 225px;
-    border: 5px solid #1b500d;
-}
-
-table {
-    align-self: center;
+    color: whitesmoke;
 }
 
 .project-media {
     padding: 20px 0px 0px 20px;
-    border: 2px solid black;
     width: 20%;
 }
 
@@ -87,34 +31,23 @@ table {
 .project-entry {
     /* Format for each project entry */
     padding: 15px 10px 5px 5px;
-    border: 2px solid #000000;
     line-height: 27px;
     width: 80%;
 }
 
-.footer {
-    text-align: center;
-    height: 10%;
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     width: 100%;
-    background-color: #003232;
+    margin: auto;
 }
 
-.footer h1 {
-    font-size: 26px;
-    color: White;
-    padding: 20px 0px 20px 10px;
-    display: inline-block;
-}
-
-.footer a {
-    font-size: 20px;
-    color: White;
-    padding: 20px 0px 20px 10px;
-}
-
-.footer p {
-    font-size: 20px;
-    color: White;
-    padding: 20px 0px 20px 10px;
-    display: inline-block;
+.button-container button {
+    font-size: 16px;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding: 1%;
+    width: 100%;
 }

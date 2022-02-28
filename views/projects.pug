@@ -3,104 +3,131 @@ block title
     title Zac Foteff | Personal Projects 
 block style
     link(rel='stylesheet' href='/stylesheets/projects.css')
-block content 
+block scripts 
+    script(src="scripts/projects.js") 
+block content
+    h1#title-elem <u><b>Personal Projects</b></u>
     div#projects
-        table 
-            tbody 
-                tr 
-                    td.project-media 
-                        img(src="/images/dashboard.png", alt="Dashboard visualizations")
-                    td.project-entry 
-                        h1 Spokane Economic Recovery Dashboard
-                        h2: a(href="https://spokaneeconomicdashboard.herokuapp.com") Project Site
-                        h2: a(href="https://github.com/zfoteff/gu-cs07") GitHub Project
-                        h2: a(href="https://drive.google.com/drive/folders/1BNPNeB3jtIR3Glxu65ILHqAECRiTyKqQ") Google Drive Architecture Documents
-                        p 
-                        | Our project aims at providing a user-friendly experience for a set of Economic indicators provided by our sponsor, Greater Spokane Inc. The 
-                        | dashboard is meant to provide the citizens of Spokane and those who may plan on moving here a detailed set of visualizations pertaining to 
-                        | the current state of the greater Spokane area's economy, updating as new data becomes available. The dashboard will serve as a means for those 
-                        | interested in learning more about Spokane's economy to obtain a greater understanding of both the current state of affairs but also the 
-                        | direction the area is headed pertaining to real estate and economic indicators.
-                        p 
-                        | Our application is built using Node.js, Express.js, and Python and the application is hosted on Heroku. The application is supported using a 
-                        | MongoDB backend database for storing key economic indicator data. Full project plan can be found on the GitHub repository and the Google Drive
-                        | documents.
-                tr
-                    td.project-media
-                        video(src="/images/LEDDemo.mp4" controls) 
-                    td.project-entry 
-                        h1 Sound Reactive LED System
-                        h2: a(href="https://github.com/zfoteff/SoundReactiveLED") GitHub Project
-                        p 
-                        | While at college, I was inspired by a classmate to create a sound reactive LED light system after I learned about how exorbitantly expensive 
-                        | those systems can be. Using an Arduino Uno, a three meter LED strip, and
-                        | a parallax sound impact sensor I was able to create a system that pulses when the ambient sound in the room exceeds certain decibel threshold.
-                        | I am currently working on a new iteration that uses an addressable LED strip, which will allow for greater customization
-                        | and more light sequences. Additionally, I am trying to integrate a new sensor that is more sensitive to changes in decibel levels, 
-                        | which will also allow for greater customization.
-                        p For this project I learned these new skills:               
-                        ul
-                            li Using Arduino micro controllers
-                            li Manipulating addressable LED strips
-                            li Creating hardware schematics and wiring components
-                            li Soldering
-                tr 
-                    td.project-media 
-                        img(src="/images/flappy.png" alt="Flappy Bird Screenshot")
-                    td.project-entry
-                        h1 Flappy Bird
-                        h2: a(href="https://github.com/zfoteff/fuppy_birb") GitHub Project Link 
-                        p
-                        | I recreated the popular mobile game Flappy Bird using handmade pixel art and the Pygame module. 
-                        | The game follows a simple loop where the player tries to navigate between the pipes and survive as long as they can. 
-                        | Future iterations will involve a scoring system, as well as more dynamic animations.
-                        p For this project I learned these new skills:
-                        ul
-                            li Using the PyGame Python library
-                            li Manipulating sprite models 
-                            li Infite scrolling 
-                            li Creating pixel art
-                tr 
-                    td.project-media
-                        img(src="/images/cways.png" alt="Conway's Game of Life Screenshot")
-                    td.project-entry
-                        h1 Conway's Game of Life
-                        h2: a(href="https://github.com/zfoteff/cways_life") GitHub Project Link 
-                        h2: a(href="https://bitstorm.org/gameoflife/") Original Source 
-                        p
-                        | Using Python, I created a command line implementaion of Conway's Game of Life
-                        | The game is referred to as a "celluar automaton" that models cell growth in generations based off of 4 rules:
-                        ol
-                            li All cells with one or no neighbors die 
-                            li All cells with 4 or more neighbors die 
-                            li All cells with two or three neighbors survives to the next generation 
-                            li All dead cells with exactly 4 neighbors are resurrected in the next generation
-                        p
-                        | Each time the program is started a randomly generated colony of cells is created, acting as the initial state for the colony to evolve from. The
-                        | player then can observe the colony evolve each generation following the four rules. 
-                        p Future versions may include: a GUI that allows for better user control and the option to input custom initial colonies.
-                tr
-                    td.project-media 
-                        video(src="/images/JumpShotDemo.mp4" alt="Jump Shot Demo Video" controls)
-                    td.project-entry 
-                        h1 Jump-Shot (Android Application)
-                        h2: a(href="https://github.com/zfoteff/JumpShot") GitHub Project Link 
-                        p 
-                        | This Android application was created as my final project for Android App Development at Gonzaga University.
-                        | The intent of the application is to allow users to  create an application that allows fans at sporting events to pool 
-                        | their photos together to create a fan-created compilation of the best moments at the game. Fans have the capability to upload photos and videos 
-                        | to game specific channels and save photos from the game. the game specific channels are viewable using a Google maps plugin overlaid 
-                        | with waypoints over the locations of recent games. The application isn't limited to sporting events, the application can be used for other 
-                        | large events where fans may want to compile their photos together.
-                tr
-                    td.project-media 
-                        img(src="/images/notestorelogin.png", alt="Note Store - Login Screen")
-                        img(src="/images/notestorehomescreen.png", alt="Note Store - Home Screen")
-                    td.project-entry 
-                        h1 Note Store: Encrypted Notetaking Application 
-                        h2: a(href="https://github.com/zfoteff/Note-Store") GitHub Project Link
-                        p 
-                        | I created a web app that allows users to not only create notes, but also create sections of notes and save notes as .txt files or in 
-                        | MongoDB. Users can create separate accounts with their own segregated notes and documents. Users can login to their account, create new 
-                        | notes, and upload/download files in their repositories. Each user's documents will be encrypted with their own private key so only they 
-                        | will be able to access their own documents.
+        div.info-card
+            div.project-media 
+                img(src="/images/dashboard.png", alt="Dashboard visualizations")
+            div.project-entry 
+                h1 Spokane Economic Recovery Dashboard (W.I.P.)
+                p 
+                | Our project aims at providing a user-friendly experience for a set of Economic indicators provided by our sponsor, Greater Spokane Inc. The 
+                | dashboard is meant to provide the citizens of Spokane and those who may plan on moving here a detailed set of visualizations pertaining to 
+                | the current state of the greater Spokane area's economy, updating as new data becomes available. The dashboard will serve as a means for those 
+                | interested in learning more about Spokane's economy to obtain a greater understanding of both the current state of affairs but also the 
+                | direction the area is headed pertaining to real estate and economic indicators.
+                p 
+                | Our application is built using Node.js, Express.js, and Python and the application is hosted on Heroku. The application is supported using a 
+                | MongoDB backend database for storing key economic indicator data. Full project plan can be found on the GitHub repository and the Google Drive
+                | documents.
+                div.button-container
+                    button(onclick="location.href='https://spokaneeconomicdashboard.herokuapp.com'") Project Site
+                    button(onclick="location.href='https://github.com/zfoteff/gu-cs07'") GitHub Project 
+                    button(onclick="location.href='https://drive.google.com/drive/folders/1BNPNeB3jtIR3Glxu65ILHqAECRiTyKqQ'") Google Drive Arcitecture Documents
+        div.info-card
+            div.project-media
+                video(src="/images/LEDDemo.mp4" controls) 
+            div.project-entry 
+                h1 Sound Reactive LED System
+                p 
+                | While at college, I was inspired by a classmate to create a sound reactive LED light system after I learned about how exorbitantly expensive 
+                | those systems can be. Using an Arduino Uno, a three meter LED strip, and
+                | a parallax sound impact sensor I was able to create a system that pulses when the ambient sound in the room exceeds certain decibel threshold.
+                p
+                | I am currently working on a new iteration that uses an addressable LED strip, which will allow for greater customization
+                | and more light sequences. Additionally, I am trying to integrate a new sensor that is more sensitive to changes in decibel levels, 
+                | which will also allow for greater customization.
+                p 
+                | For this project I learned these new skills:               
+                ul
+                    li Using Arduino micro controllers
+                    li Manipulating addressable LED strips
+                    li Creating hardware schematics and wiring components
+                    li Soldering
+                div.button-container
+                    button(onclick="location.href='https://github.com/zfoteff/SoundReactiveLED'") GitHub Project
+        div.info-card
+            div.project-media
+                img(src="/images/expense-calc.png", alt="")
+            div.project-entry 
+                h1 Expense Calculator 
+                div.button-container
+                    button(onclick="location.href='https://github.com/zfoteff/expense_calculator'") GitHub Project
+        div.info-card
+            div.project-media
+                img(src="", alt="")
+            div.project-entry 
+                h1 Distributed Chat Messaging System (W.I.P.)
+                div.button-container
+                    button(onclick="location.href=https://github.com/zfoteff/ChatMessage'") GitHub Project
+        div.info-card
+            div.project-media 
+                video(src="/images/JumpShotDemo.mp4" alt="Jump Shot Demo Video" controls)
+            div.project-entry 
+                h1 Jump-Shot (Android Application)
+                p 
+                | This Android application was created as my final project for Android App Development at Gonzaga University.
+                | The intent of the application is to allow users to  create an application that allows fans at sporting events to pool 
+                | their photos together to create a fan-created compilation of the best moments at the game. 
+                p
+                | Fans have the capability to upload photos and videos 
+                | to game specific channels and save photos from the game. the game specific channels are viewable using a Google maps plugin overlaid 
+                | with waypoints over the locations of recent games. The application isn't limited to sporting events, the application can be used for other 
+                | large events where fans may want to compile their photos together.
+                div.button-container
+                    button(onclick="location.href='https://github.com/zfoteff/JumpShot'") GitHub Project
+        div.info-card
+            div.project-media 
+                img(src="/images/notestorelogin.png", alt="Note Store - Login Screen")
+                img(src="/images/notestorehomescreen.png", alt="Note Store - Home Screen")
+            div.project-entry 
+                h1 Note Store: Encrypted Notetaking Application 
+                p 
+                | I created a web app that allows users to not only create notes, but also create sections of notes and save notes as .txt files or in 
+                | MongoDB. Users can create separate accounts with their own segregated notes and documents. Users can login to their account, create new 
+                | notes, and upload/download files in their repositories. Each user's documents will be encrypted with their own private key so only they 
+                | will be able to access their own documents.
+                div.button-container
+                    button(onclick="location.href='https://github.com/zfoteff/Note-Store'") GitHub Project
+        div.info-card
+            div.project-media 
+                img(src="/images/flappy.png" alt="Flappy Bird Screenshot")
+            div.project-entry
+                h1 Flappy Bird
+                p
+                | I recreated the popular mobile game Flappy Bird using handmade pixel art and the Pygame module. 
+                | The game follows a simple loop where the player tries to navigate between the pipes and survive as long as they can. 
+                | Future iterations will involve a scoring system, as well as more dynamic animations.
+                p 
+                | For this project I learned these new skills:
+                ul
+                    li Using the PyGame Python library
+                    li Manipulating sprite models 
+                    li Infite scrolling 
+                    li Creating pixel art
+                div.button-container
+                    button(onclick="location.href='https://github.com/zfoteff/fuppy_birb'") GitHub Link
+        div.info-card       
+            div.project-media
+                img(src="/images/cways.png" alt="Conway's Game of Life Screenshot")
+            div.project-entry
+                h1 Conway's Game of Life
+                p
+                | Using Python, I created a command line implementaion of Conway's Game of Life
+                | The game is referred to as a "celluar automaton" that models cell growth in generations based off of 4 rules:
+                ol
+                    li All cells with one or no neighbors die 
+                    li All cells with 4 or more neighbors die 
+                    li All cells with two or three neighbors survives to the next generation 
+                    li All dead cells with exactly 4 neighbors are resurrected in the next generation
+                p
+                | Each time the program is started a randomly generated colony of cells is created, acting as the initial state for the colony to evolve from. The
+                | player then can observe the colony evolve each generation following the four rules. 
+                p 
+                | Future versions may include: a GUI that allows for better user control and the option to input custom initial colonies.
+                div.button-container
+                    button(onclick="location.href='https://github.com/zfoteff/cways_life'") GitHub Project Link 
+                    button(onclick="location.href='https://bitstorm.org/gameoflife/'") Original Source

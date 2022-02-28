@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const intro_string = "\tHello! My name is Zac Foteff and I am a student at Gonzaga University pursing a Bachelor of Science focused in Computer Science with a minor in Mathematics. " +
+const intro_string = "\tHello! My name is Zac Foteff and I am a student at Gonzaga University pursing a Bachelor of Science focused in Computer Science. " +
     "I am interested in pursing a career as a backend software developer, or in the computer/network security field.\n\n\tMy Journey as a software developer began when I was just a freshman " +
     "in highschool. I discovered a Python IDE for my iPad called Pythonista and I spent my Christmas break studying Python documentation and created my first scripts to " +
     "practice what I had learned. I knew that day I had found something that inspired me and sparked creativity " +
@@ -17,7 +17,7 @@ const skills_string = "\tMy learning isn't just limited to the classroom and the
     "various other skills need in computer science and software development. I have a good understanding of Git " +
     "and its various tools for managing workflow, as well as developing a good understanding of the Linux " +
     "operating system. Additionally, I have devoted lots of time towards learning to use and developing with " +
-    "Arduinos and Raspberry Pis.I especially love developing projects with the Arduino to bridge the gap " +
+    "Arduinos and Raspberry Pis. I especially love developing projects with the Arduino to bridge the gap " +
     "between hardware and software.";
 
 

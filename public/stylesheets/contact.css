@@ -1,0 +1,57 @@
+#title-elem {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.info-card {
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.icon {
+    padding: 20px 0px 0px 20px;
+    width: 20%;
+}
+
+.link {
+    /* Format for each project entry */
+    padding: 15px 10px 5px 5px;
+    width: 20%;
+}
+
+.link img {
+    float: center;
+    height: max-content;
+    width: 100%;
+    margin: 15px auto auto 15px;
+}
+
+#contact-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contact-icons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#contact-email input {
+    width: 90%;
+    height: 15%;
+    font-size: 18px;
+    margin-bottom: 1%;
+}
+
+#contact-email textarea {
+    height: 100px;
+    width: 90%;
+    font-size: 18px;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
