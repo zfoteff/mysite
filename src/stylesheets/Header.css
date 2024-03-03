@@ -1,0 +1,42 @@
+.Header {
+    text-align: center;
+    max-height: 5%;
+    width: 100%;
+    /* background-color: #003232 */
+}
+
+.Header h1 {
+    font-size: 38px;
+    color: White;
+    padding-top: 5px;
+}
+
+.Header h2 {
+    font-size: 24px;
+    color: White;
+    padding-bottom: 5px;
+}
+
+.Header.navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+
+.Header.navigation button {
+    background-color: #03584e;
+    color: whitesmoke;
+    padding: 14px 16px;
+    width: 34%;
+    font-size: 22px;
+    border: 2px solid white;
+}
+
+.Header.navigation button:active {
+    color: yellow;
+}
+
+.navigation button:hover {
+    color: yellow;
+}
